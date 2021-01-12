@@ -65,6 +65,12 @@ app.addStates([
     path: consts.viewsPath + "courses.html",
     title: "GeoGebra Centar Beograd::Kursevi",
     script: consts.assetsPath + "js/courses.js"
+  },
+  {
+    name: "geoart",
+    path: consts.viewsPath + "geoart.html",
+    title: "GeoGebra Centar Beograd::Geoart",
+    script: consts.assetsPath + "js/geoart.js"
   }
 ]);
 

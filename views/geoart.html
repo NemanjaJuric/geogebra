@@ -1,0 +1,142 @@
+<div id="small-header"></div>
+
+<div class="row my-5">
+  <div class="col-lg-12 text-center">
+    <h1 class="display-4">GeoART</h1>
+  </div>
+</div>
+
+<div class="col-lg-8 offset-lg-2">
+  <br />
+  <h4>Čemu je GeoART namenjen?</h4>
+  <p>
+    GeoART je aplikacija nastala u cilju unapređivanja nastave matematike na
+    nivou osnovne škole. Ova aplikacija se koristi za geometrijske konstrukcije
+    u ravni i jednostavna je za korišćenje.
+  </p>
+  <br />
+
+  <h4>Kratak opis korišćenja aplikacije</h4>
+  <p>
+    Aplikacija se može preuzeti sa
+    <a href="data/setup_GeoART.exe">sledećeg linka</a>
+    i instalira na računaru korisnika. Na samom početku, ukoliko korisnik želi
+    prikaz koordinatnog sistema, treba da klikne na dugme Coord. system.
+    Korisnik u Command upisuje komandu koju želi da program izvrši. Komanda
+    treba da ima jedan od 17 opisanih oblika (modifikovanih do na imena
+    promenljivih), a potom klikom na dugme Run, komanda se izvršava i u Message
+    se ispisuje poruka da li je naredba uspešno izvršena. KOMANDE NE SADRŽE
+    BELINE! U Examples su detaljniji opisi komandi sa pratećim primerima. Klikom
+    na Clear dugme, svi konstruisani objeki se obrišu.
+  </p>
+
+  <p>
+    GeoART sadrži 17 instrukcija koje su dovoljne za sve geometrijske
+    konstrukcije u ravni na nivou osnovne škole:
+  </p>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 1</h5>
+    A(x,y) - ovo bi nacrtalo tačku A sa koordinatama x i y, gde su x i y realni
+    brojevi. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 2</h5>
+    A - ovo bi nacrtalo tačku A sa proizvoljnim koordinatama. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 3</h5>
+    p - ovo bi nacrtalo proizvoljnu pravu i dodelilo bi joj naziv p. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 4</h5>
+    p((x,y),k) - ovo bi iscrtalo pravu kroz tačku sa realnim koordinatama (x,y)
+    sa koeficijntom k i dodelilo bi joj naziv p. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 5</h5>
+    AB - ovo bi spojilo tačke A i B, pa bismo dobili duž AB. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 6</h5>
+    p(A,k) - ovo bi nacrtalo pravu kroz tacku A sa realnim koeficijentom k i
+    dodelio bi joj naziv p. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 7</h5>
+    c_k(A,x) - ovo bi isrtalo kružnicu k sa centrom u tački A i sa poluprečnikom
+    x, kada imamo kružnicu k, u naredbi se obavezno zapisuje c_k, odnosno c_ je
+    oznaka da je reč o kružnici. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 8</h5>
+    c_k(A,X) - ovo bi nacrtalo kružnicu k koja sadrži tačku X, a čiji je centar
+    tačka A. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 9</h5>
+    p=AB - ovo bi iscrtalo pravu kroz A i B i dodeliti joj naziv p. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 10</h5>
+    T=pq - ovo bi nacrtalo presek pravih p i q i tom preseku bi se dodelio naziv
+    T. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 11</h5>
+    K=S(A,B) - ovo bi nacrtalo središte i dodelilo bi ime K. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 12</h5>
+    p=sym(AB) - ovo bi nacrtalo simetralu duzi AB i dodelio bi joj naziv p.
+    <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 13</h5>
+    s=bis(p,q) - ovo bi nacrtalo bisektrisu ugla koji čine prave p i q i dodelio
+    bi joj naziv s. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 14</h5>
+    s=bis(BAC) - ovo bi nacrtalo bisektrisu ugla BAC, pri čemu se ugao zapisuje
+    u direktnom smeru. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 15</h5>
+    q=norm(A,p) - ovo bi nacrtalo pravu q koja sadrži tačku A i normalna je na
+    pravu p. <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 16</h5>
+    {A,B}=pc_k - ovo bi nacrtalo tačke A i B koje se nalaze u preseku prave p i
+    kruznice k. Ukoliko imamo presek prave i kruga, obavezno u naredbi prvo
+    zapisujemo pravu, pa onda krug! Ukoliko nam je bitna samo prva ili samo
+    druga tačka preseka, redom pišemo {A,}=pc_k ili {,B}=pc_k. Ukoliko je p
+    tangenta na k, na crtežu će se označiti samo prva tačka ako su obe tačke
+    unete, odnosno druga tačka, ako prva tačka nije uneta. Ukoliko se prava p i
+    kružnica k ne seku, onda se neće ništa označiti na crtežu.
+    <br />
+  </div>
+  <div class="deffinition-paragraph">
+    <h5>Instrukcija 17</h5>
+    {A,B}=c_k1c_k2 - ovo bi nacrtalo tačke A i B koje se nalaze u preseku
+    kruznice k1 i kruznice k2. Ako se k1 i k2 samo dodiruju, onda se na crtežu
+    označava samo prva tačka ako su obe tačke unete, odnosno druga tačka, ako
+    prva tačka nije uneta. Ukoliko nam je bitna samo prva ili samo druga tačka
+    preseka, redom pišemo {A,}=c_k1c_k2 ili {,B}=c_k1c_k2. Ako se kružnice ne
+    seku, na crtežu se ništa neće označiti. <br />
+  </div>
+  <div class="tips-paragraph">
+    <h5>Napomena</h5>
+    Sve instrukcije se zapisuju bez belina i instrukcije variraju do na imena
+    promenljivih. <br />
+    Dozvoljena imena za tačke: A,A1,H23... (jedno veliko slovo + broj)
+    <br />
+    Dozvoljena imena za prave: a,p2,j17... (jedno malo slovo + broj) <br />
+  </div>
+  <div class="dark-paragraph">
+    <h4>Autori</h4>
+    Autori ove aplikacije su Irena Vasiljević, Danijela Stanojević i Miloš
+    Vujčić, studenti osnovnih akademskih studija na Matematičkom fakultetu u
+    Beogradu.
+  </div>
+</div>
