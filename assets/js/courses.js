@@ -6,6 +6,11 @@ loadFooter();
 
 var menuScrollPosition = null;
 
+$("#all-courses").click(function () {
+  document.location.search = '';
+  app.loadState($(this).attr('courses'));
+})
+
 function loadCourses() {
   $.getJSON("data/courses/courses.json", function (data) {
     var courses = [];

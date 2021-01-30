@@ -1,0 +1,205 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+<title>Projekat</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+
+
+
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<script type="text/javascript">
+$(function() {
+    var sidebar_ul = $('.sidebar > li > ul'),
+        sidebar_a  = $('.sidebar > li > a');
+    sidebar_ul.hide();
+    sidebar_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            sidebar_a.removeClass('active');
+            sidebar_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+        $(function() {
+            var offset = $("#sidebar").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#sidebar").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#sidebar").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+  	
+</div>
+
+
+
+
+
+<style>
+body {
+  background-image: url('pozadina4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+	<div id="page" class="container">
+
+
+			
+
+
+	
+<div id="sidebar">
+
+					<ul>
+											<li>
+							<h2 style="color:PaleVioletRed" ><b><font size="5">UVOD U STATISTIKU</b></font></h2>
+							<ul>
+	
+							<li><a href="uvod.html"><font color=#000000 size="3,5"><i><u>Uvod</u></i></font></a></li>
+							<li><a href="zanimljivost.html"><font color=#000000 size="3"><i><u>Zanimljivost</u></i></font></a></li>
+							<li><a href="populacijaIobelezje.html"><font color=#000000 size="3"><i><u>Populacija i obeležje</u></i></font></a></li>
+							<li><a href="raspodelaIuzorkovanje.html"><font color=#000000 size="3"><i><u>Raspodela obeležja <br> Uzorkovanje</u></i></a></li>
+							<li><a href="grafickiPrikaz.html"><font color=#000000 size="3"><i><u>Grafički prikaz podataka</u></i></a></li>
+							<li><a href="histogram.html"><font color=#000000 size="3"><i><u>Histogram</u></i></a></li>
+							<li><a href="karakteristike.html"><font color=#000000 size="3"><i><u>Parametri centralne tendencije <br>Mere rasejanja</u></i></a></li>
+							<li><a href="autlajeri.html"><font color=#000000 size="3"> <i><u>Autlajeri</u></i></a></li>
+							<li><a href="zadatak.html"><font color=#000000 size="3"> <i><u>Zadaci</u></i></a></li>
+							<li><a href="geogebra.html"><font color=#000000 size="3"> <i><u>Statistika i GeoGebra</u></i></a></li>
+							<li><a href="literatura.html"><font color=#000000 size="3"> <i><u>Literatura</u></i></a></li>
+						</li>
+					</ul>
+
+				</div>
+
+
+
+<div id="list">
+ 
+<center>
+<b><font face="times new roman" size="5"> Grafički prikaz statističkih podataka kroz GeoGebru </font></b>
+</center>
+
+
+&nbsp; &nbsp; 
+<font size=3 face="times new roman">
+<p align=justify>
+<br>
+Postoji veliki broj matematičkih oblasti u kojima bi nam GeoGebra bila veoma korisna.<br>
+Ovde ćemo videti jedan mali deo toga. <br><br>
+GeoGebra nam može pomoći pri grafičkom prikazivanju statističkih podataka. <br>
+<br>
+	Kada otvorimo sajt <a href = ”https://www.geogebra.org/classic ”>GeoGebra</a> pojavljuje se sledeće:
+	<br>
+	<br>
+	<img src="geogebra1.png"width="700" height="350">
+	<br><br>
+	
+	U gornjem desnom uglu postoji ikonica sa padajućim menijem:
+	<br><br>
+		<img src="geogebra2.png"width="700" height="350"><br> <br>
+	Nama je potrebna ikonica pod nazivom "View" pomoću  koje podešavamo šta ćemo videti na ekranu.
+	<br><br>
+	
+			<img src="geogebra3.png"width="700" height="350"><br> 
+			<br>
+			Odabraćemo da vidimo "Graphics" i "Spreadsheet":
+			<br><br>
+					<img src="geogebra4.png"width="700" height="350"><br> 
+<br>
+           U kolonu A upišemo podatke koje želimo da prikažemo grafički. Ovde smo uzeli podatke iz zadatka koji smo radili prilikom upoznavanja
+		   sa parametrima centralne tendencije i merama rasejanja.<br>
+		   Takođe, ako smo podatke sačuvali u nekom fajlu napravljenom pomoću Excel-a 
+		   Geogebra će nam dozvoliti da jednostavno prekopiramo potrebnu kolonu:<br> <br>
+		   	<img src="geogebra5.png"width="700" height="350"><br> <br>
+			Selektovaćemo čitavu kolonu A i u gornjem levom uglu izabrati drugu ikonicu:<br><br>
+					   	<img src="geogebra6.png"width="700" height="350"><br> <br>
+			Odabraćemo "One Variable Analysis" jer radimo sa jednom promenljivom:<br><br>
+								   	<img src="geogebra7.png"width="700" height="350"><br><br> 
+		Pojavljuje nam se histogram apsolutnih frekvencija. <br> <br>
+		Na ikonici koja označava "Settings" imamo naprednija podešavanja histograma: <br><br>
+										   	<img src="geogebra8.png"width="700" height="350"><br> <br>
+		Umesto histograma možemo odabrati i druge načine za grafički prikaz podataka:<br><br>
+												   	<img src="geogebra9.png"width="700" height="350"><br> <br>
+					Ovde je dat jedan kutijasti dijagram za date podatke:<br><br>
+													<img src="geogebra10.png"width="700" height="350"><br> <br>
+<i>Napomena: Kada menjamo način grafičkog prikaza istih podataka,neophodno je ponovo selektovati sve podatke</i>
+  	</p>
+
+
+</div>
+</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+
+
+<title>Projekat</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+
+
+
+<style>
+body {
+  background-image: url('pozadina4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<!--[if IE 6]>
+<link href="default_ie6.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+
+
+<script type="text/javascript">
+$(function() {
+    var sidebar_ul = $('.sidebar > li > ul'),
+        sidebar_a  = $('.sidebar > li > a');
+    sidebar_ul.hide();
+    sidebar_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            sidebar_a.removeClass('active');
+            sidebar_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+        $(function() {
+            var offset = $("#sidebar").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#sidebar").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#sidebar").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+
+
+
+<style>
+body {
+  background-image: url('pozadina4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+
+	<div id="page" class="container">
+
+
+			
+
+
+	
+<div id="sidebar">
+
+					<ul>
+											<li>
+							<h2 style="color:PaleVioletRed" ><b><font size="5">UVOD U STATISTIKU</b></font></h2>
+							<ul>
+	
+							<li><a href="uvod.html"><font color=#000000 size="3,5"><i><u>Uvod</u></i></font></a></li>
+							<li><a href="zanimljivost.html"><font color=#000000 size="3"><i><u>Zanimljivost</u></i></font></a></li>
+							<li><a href="populacijaIobelezje.html"><font color=#000000 size="3"><i><u>Populacija i obeležje</u></i></font></a></li>
+							<li><a href="raspodelaIuzorkovanje.html"><font color=#000000 size="3"><i><u>Raspodela obeležja <br> Uzorkovanje</u></i></a></li>
+							<li><a href="grafickiPrikaz.html"><font color=#000000 size="3"><i><u>Grafički prikaz podataka</u></i></a></li>
+							<li><a href="histogram.html"><font color=#000000 size="3"><i><u>Histogram</u></i></a></li>
+							<li><a href="karakteristike.html"><font color=#000000 size="3"><i><u>Parametri centralne tendencije<br> Mere rasejanja</u></i></a></li>
+							<li><a href="autlajeri.html"><font color=#000000 size="3"> <i><u>Autlajeri</u></i></a></li>
+							<li><a href="zadatak.html"><font color=#000000 size="3"> <i><u>Zadaci</u></i></a></li>
+							<li><a href="geogebra.html"><font color=#000000 size="3"> <i><u>Statistika i GeoGebra</u></i></a></li>
+							<li><a href="literatura.html"><font color=#000000 size="3"> <i><u>Literatura</u></i></a></li>
+						</li>
+					</ul>
+
+				</div>
+				
+
+
+
+<div id="list">
+ 
+<center>
+<b><font face="times new roman" size="5">Zanimljivost</font></b>
+</center>
+
+
+&nbsp; &nbsp; 
+<font size=3 face="times new roman">
+<p align=justify>
+<br>
+
+ &nbsp; &nbsp; Pre nego što počnemo sa teorijom osvrnućemo se na jedan istorijski događaj. <br><br>
+    Kada se britanski mikrobiolog  Aleksandar Fleming vratio sa godišnjeg odmora i
+	ugledao buđ u jednoj od Petrijevih šoljica koje je ostavio,
+	ni on sam nije mogao da nasluti da je upravo to početak jedne 
+	medicinske revolucije. <br>
+	<img align="right" src="fleming.jpg" width="158" height="158">
+ &nbsp; Proučavanjem sadržaja šoljice saznao je da je unutra bila čestica buđi koja je 
+	u to vreme bila poznata pod nazivom Penicillium notatum, te je on svoju materiju
+	nazvao<font color=#DB7093> PENICILIN. </font> <br>
+	<img align="left" src="penicilin.png" width="128" height="128">
+
+	Međutim, od Flemingovog otkrića do korisne primene u medicini put je bio veoma
+	dug i težak. <br><br>
+	U naučnoj zajednici nije postojao efikasan i pravilan način da se uradi procena 
+	novog leka.  S obzirom na to da se radilo o otkriću do kog je došlo slučajnim putem
+	neophodni su bili eksperimenti koji bi pokazali da je lek koristan,
+	a pre svega da nije štetan.<br>
+	
+	Neki pacijenti su se oporavljali spontano, a na neke lek uopšte nije ni delovao
+	i bilo je veoma teško razlikovati dobre od loših lekova (kojih je bilo i previše tada).<br><br>
+	Još jedan veliki problem: velike kompanije nisu htele da preuzmu rizik masovne 
+	proizvodnje penicilina. Pored nedovoljne ispitanosti leka, smatrali su da je 
+	proizvodnja i neprofitabilna zbog sporog dobijanja.<br>
+	<img src="bocica.jpg" width="650" height="300">
+
+	Dok su biolozi ispitivali penicilin sa medicinske strane, matematičari tog vremena
+	su smišljali nove eksperimentalne tehnike, inspirisane postojećim koje su se upotrebljavale
+	u poljoprivredi, kako bi došli do novih zaključaka o leku.<br><br>
+	
+	Baš zbog nedostatka načina za ispitivanje novih lekova, tek pred kraj rata je 
+	omogućena industrijalizacija i proizvodnja većih količina penicilina.<br> <br>
+	
+	<i>Ukoliko niste znali: većina vojnika koja je umirala tokom Drugog svetskog rata
+	nije direktno ubijena iz vatrenog oružja, već je umirala od bakterijskih infekcija 
+	na ranama koje su zadobili u toku borbe. <br>
+
+	I ova kasnija proizvodnja je spasila ogroman broj života, ali da je krenula 
+	ranije verovatno bi smrtnost inficiranih vojnika bila manja.</i> <br> <br>
+	
+	<font color=#DB7093>Danas se od statističara očekuje da na osnovu kontrolisanog slučajnog uzorka u 
+	eksperimentu za kratko vreme predstave kliničku vrednost leka i samim tim skrate
+	vreme od otkrivanja do široke upotrebe istog.</font> <br> <br>
+	
+	Eh, da je Fleming imao tim današnjih statističara…
+</font>
+</p>
+
+
+</div>
+
+
+</div>
+
+</body>
+</html>

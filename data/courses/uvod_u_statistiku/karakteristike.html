@@ -1,0 +1,254 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<link rel = "shortcut icon" href = "images/kockice1.png">
+
+<title>Projekat</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<script type="text/javascript">
+$(function() {
+    var sidebar_ul = $('.sidebar > li > ul'),
+        sidebar_a  = $('.sidebar > li > a');
+    sidebar_ul.hide();
+    sidebar_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            sidebar_a.removeClass('active');
+            sidebar_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+        $(function() {
+            var offset = $("#sidebar").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#sidebar").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#sidebar").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+
+
+
+<style>
+body {
+  background-image: url('pozadina4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+
+
+
+</head>
+<body>
+
+
+  	
+</div>
+
+
+
+
+
+	<div id="page" class="container">
+
+
+			
+
+
+	
+<div id="sidebar">
+
+					<ul>
+											<li>
+							<h2 style="color:PaleVioletRed" ><b><font size="5">UVOD U STATISTIKU</b></font></h2>
+							<ul>
+	
+							<li><a href="uvod.html"><font color=#000000 size="3,5"><i><u>Uvod</u></i></font></a></li>
+							<li><a href="zanimljivost.html"><font color=#000000 size="3"><i><u>Zanimljivost</u></i></font></a></li>
+							<li><a href="populacijaIobelezje.html"><font color=#000000 size="3"><i><u>Populacija i obeležje</u></i></font></a></li>
+							<li><a href="raspodelaIuzorkovanje.html"><font color=#000000 size="3"><i><u>Raspodela obeležja<br> Uzorkovanje</u></i></a></li>
+							<li><a href="grafickiPrikaz.html"><font color=#000000 size="3"><i><u>Grafički prikaz podataka</u></i></a></li>
+							<li><a href="histogram.html"><font color=#000000 size="3"><i><u>Histogram</u></i></a></li>
+							<li><a href="karakteristike.html"><font color=#000000 size="3"><i><u>Parametri centralne tendencije<br> Mere rasejanja</u></i></a></li>
+							<li><a href="autlajeri.html"><font color=#000000 size="3"> <i><u>Autlajeri</u></i></a></li>
+							<li><a href="zadatak.html"><font color=#000000 size="3"> <i><u>Zadaci</u></i></a></li>
+							<li><a href="geogebra.html"><font color=#000000 size="3"> <i><u>Statistika i GeoGebra</u></i></a></li>
+							<li><a href="literatura.html"><font color=#000000 size="3"> <i><u>Literatura</u></i></a></li>
+						</li>
+					</ul>
+
+				</div>
+				
+
+
+
+<div id="list">
+ 
+<center>
+<b><font face="times new roman" size="5"> Parametri centralne tendencije. Mere rasejanja. </font></b>
+</center>
+&nbsp; &nbsp; 
+<font size=3 face="times new roman">
+<p align=justify>
+<br>
+Kako bismo bolje razumeli nove pojmove, posle novouvedenog parametra ili mere rasejanja izračunaćemo ih na konkretnom primeru. <br>
+Uzorak : 15, 21, 18, 27, 19, 23, 29, 16. Svi elementi su jednako verovatni.
+</p>
+&nbsp; &nbsp; 
+<font size=3 face="times new roman">
+<p align=justify>
+
+	<b><u>PARAMETRI CENTRALNE TENDENCIJE</b></u><br><br>
+  
+	<b>•	<font color=#DB7093>Uzoračka sredina</b></font> je ocena za <u><font color=#DB7093>očekivanu srednju vrednost.</font></u> <br><br>
+	 $\overline{X}=\frac{(X_1+X_2+…+X_n)}{n}$, dok je njena realizovana 
+	 vrednost $\overline{x}=\frac{(x_1+x_2+…+x_n)}{n}$. <br><br>
+	<font color=#38ACEC><i>Primer:
+	 $\overline{X}=\frac{(X_1+X_2+X_3+X_4+X_5+X_6+X_7+X_8)}{8}=\frac{(15+21+18+27+19+23+29+16)}{8}=21$
+	<br><br></i></font>
+	•	<u><font color=#DB7093>Medijana raspodele</u></font> je “tačka koja je u sredini”.  <br>
+		<b><font color=#DB7093>Uzoračka medijana</b></font> je ocena za medijanu raspodele:<br>$$
+\displaystyle m_{(e)} = \left\{ \begin{array}{ll}
+X_{(k+1)}, & \ n=2k+1\\
+\frac{X_{(k)}+X_{(k+1)}}{2}, & \ n=2k\\
+\end{array} \right.
+$$
+<br>
+<font color=#38ACEC><i>Primer: Kako je naš 
+uzorak paran : $n=2k$. U našem slučaju $n=8$ pa odavde očigledno možemo zaključiti da je $k=4$.<br>
+	Po opštoj formuli za medijanu: $m_{(e)}=\frac{X_{(k)}+X_{(k+1)}}{2}$ sledi naša formula: <br>
+	$ m_{(e)}=\frac{X_{(4)}+X_{(5)}}{2}=\frac{19+20}{2}=20$</font></i><br><br>
+
+	•	<u><font color=#DB7093>Moda raspodele </u></font>je vrednost u kojoj funkcija gustine 
+	(ili zakon raspodele, zavisi od uzorka)  dostiže maksimum.<br>
+	<b> <font color=#DB7093>Uzoračka moda</b></font> je najviše pojavljivana vrednost u uzorku.<br> <br>
+	
+	
+	<b><u>MERE RASEJANJA</b></u><br><br>
+	
+	•	<u><font color=#DB7093>Raspon raspodele</u></font> ocenjujemo <b><font color=#DB7093>uzoračkim rasponom</b></font>.<br>
+	Ova mera i nije naročito korisna pri određivanju tipa raspodele, 
+	ne daje nam dodatne informacije o tipu raspodele.<br>
+	<font color=#38ACEC><i>Primer: Kako nam je za određivanje uzoračkog raspona neophodan varijacioni niz, prvo ćemo njega izračunati.
+   Varijacioni niz dobijamo sortiranjem elemenata uzorka što u našem slučaju nije teško jer je uzorak mali:<br>
+	$(X_{(1)}, X_{(2)},X_{(3)}, X_{(4)}, X_{(5)}, X_{(6)},X_{(7)} ,X_{(8)})=(15, 16, 18, 19, 21, 23, 27, 29)$ 	<br>
+	Raspon uzorka je razlika najmanjeg i najvećeg elementa uzorka: <br>
+	$R=X_{(8)}-X_{(1)}= 29-15= 14$ <br></font></i><br>
+	<b>•	<font color=#DB7093>Standardno odstupanje raspodele</b></font><br>
+	
+	Pre nego što definišemo pojam standardnog odstupanja raspodele uvešćemo pojmove 
+	<u><font color=#DB7093>matematičko očekivanje i disperzija .</font></u><br>
+	
+	Neka slučajna veličina $X$ uzima vrednosti $x_1, x_2 , … , x_n$ sa verovatnoćama
+	redom $p_1, p_2, …, p_n$, pri čemu je $p_1 + p_2 + … + p_n = 1$.<br>
+	<u><font color=#DB7093>Matematičko očekivanje slučajne veličine $X$</font></u> je<br> 
+	$E(X) = x_1p_1 +x_2p_2 + … + x_np_n$ <br>
+
+	<u><font color=#DB7093>Disperzija proste slučajne veličine $X$</font></u> je<br>
+	$D(X) = E(X-E(X))^2$.<br><br>
+	
+	<b><font color=#DB7093>Standardno odstupanje raspodele </font></b>je <br>
+	$\sigma = \sqrt {E(X-E(X))^2)}$.<br>
+	Standardno odstupanje raspodele daje nam informaciju koliko slučajna veličina 
+	odstupa od svog očekivanja. <br>
+	Ocena za $\sigma^2$ je  <b><font color=#DB7093>uzoračka disperzija</font>:</b><br>
+	$\overline{S}^2= \frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X})^2.$<br>
+	<font color=#38ACEC><i>Primer:
+	$\overline{S}^2= \frac{1}{8}\sum_{i=1}^{8}(X_i-\overline{X})^2=\frac{186}{8}=23,25$<br></font></i>
+	<br>Takođe, koristi se i <b><font color=#DB7093>popravljena uzoračka disperzija</font></b>: <br>
+	$\widetilde{S}^2= \frac{1}{n-1}\sum_{i=1}^{n}(X_i-\overline{X})^2.$<br>
+	<font color=#38ACEC><i>Primer:$\widetilde{S}^2= \frac{1}{7}\sum_{i=1}^{8}(X_i-\overline{X})^2=\frac{186}{7}=26,57.$<br></i></font>
+	<br>
+	<i>Razlog uvođenja popravljene uzoračke  disperzije:</i><br><br>
+	
+	Uveli smo pojam uzoračke sredine : $\overline{X}=\frac{(X_1+X_2+…+X_n)}{n}$.<br>
+	
+	Ovo je slučajna veličina čiji su matematičko očekivanje i disperzija određeni sa:<br>
+	
+	$E(\overline{X})= E(\frac{X_1+X_2+…+X_n}{n})=\frac{1}{n}(E(X_1)+E(X_2)+ … +E(X_n))=m$<br>
+	
+	$D(\overline{X})= D((\frac{X_1+X_2+…+X_n}{n})= \frac{1}{n^2} (D(X_1)+ D(X_2)+ … D(X_n)) = \frac{1}{n^2}n\sigma^2= \frac{\sigma^2}{n}.$<br>
+	<br>
+	Uzoračka  disperzija je , takođe, jedna slučajna veličina.<br>
+	Njeno matematičko očekivanje:<br>
+	$E(\overline{S}^2)=E(\frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X})^2)=
+	 E(\frac{1}{n}\sum_{i=1}^{n}(X_i)^2-\overline{X}^2)= \frac{1}{n}\sum_{i=1}^{n}E(X_i)^2-\overline{X}^2=$<br>
+	 $E(X_1)-E(\overline{X}^2)=(\sigma^2+m^2)-(\frac{\sigma^2}{n}+m^2)=\frac{n-1}{n}\sigma^2 \not=\sigma^2$.<br>
+	 <br>
+	Popravljena uzoračka disperzija je $\widetilde{S}^2= \frac{n}{n-1}\overline{S}^2$.<br>
+	
+	Ako bismo računali matematičko očekivanje:<br>
+	$E(\widetilde{S}^2)= \frac{n}{n-1} E(\overline{S}^2)= \frac{n}{n-1}\frac{n-1}{n}\sigma^2=\sigma^2.$<br><br>
+•	<u><font color=#DB7093>Interkvartilno rastojanje</u></font> određujemo tako što prvenstveno nađemo $q_1$ i $q_3$ tako da $\frac{1}{4}$
+	članova uzorka bude manja od $q_1$ i da $\frac{1}{4}$ uzorka bude veca od $q_3$.<br>
+	Najlakši način za nalaženje jeste:<br>
+	da prvo odredimo uzoračku medijanu datog niza slučajnih veličina i zatim nađemo medijane novodobijenih podnizova <br>
+	gde bi $q_1$ bila medijana prve polovine niza dok bi $q_3$ bila medijana druge polovine početnog.<br>
+	<b><font color=#DB7093>Ocena za inerkvartilno rastojanje: $IQR= q_3-q_1$ .</font></b><br>
+  <font color=#38ACEC><i>Primer: $q_1=\frac{X_{(2)}+X_{(3)}}{2}=\frac{16+18}{2}=17$ <br>
+	$q_3=\frac{X_{(6)}+X_{(7)}}{2}=\frac{23+27}{2}=25$ <br>
+	$IQR= q_3-q_1=25-17=8$<br></i></font>
+</div>
+</div>
+
+</body>
+</html>

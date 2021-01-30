@@ -1,0 +1,445 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+    }
+    </style>
+
+<title>Projekat</title>
+
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+
+
+
+
+
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="jquery.slidertron-1.1.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+
+
+
+
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  MathJax.Hub.Config({
+    extensions: ["tex2jax.js"],
+    jax: ["input/TeX","output/HTML-CSS"],
+    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+  });
+</script>
+
+
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300,600|Archivo+Narrow:400,700" rel="stylesheet" type="text/css" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+
+
+
+<script type="text/javascript">
+$(function() {
+    var sidebar_ul = $('.sidebar > li > ul'),
+        sidebar_a  = $('.sidebar > li > a');
+    sidebar_ul.hide();
+    sidebar_a.click(function(e) {
+        e.preventDefault();
+        if(!$(this).hasClass('active')) {
+            sidebar_a.removeClass('active');
+            sidebar_ul.filter(':visible').slideUp('normal');
+            $(this).addClass('active').next().stop(true,true).slideDown('normal');
+        } else {
+            $(this).removeClass('active');
+            $(this).next().stop(true,true).slideUp('normal');
+        }
+    });
+});
+</script>
+
+
+
+
+
+
+<script type="text/javascript">
+        $(function() {
+            var offset = $("#sidebar").offset();
+            var topPadding = 15;
+            $(window).scroll(function() {
+                if ($(window).scrollTop() > offset.top) {
+                    $("#sidebar").stop().animate({
+                        marginTop: $(window).scrollTop() - offset.top + topPadding
+                    });
+                } else {
+                    $("#sidebar").stop().animate({
+                        marginTop: 0
+                    });
+                };
+            });
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+
+
+  	
+</div>
+
+
+
+
+
+<style>
+body {
+  background-image: url('pozadina4.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+	<div id="page" class="container">
+
+
+			
+
+
+	
+<div id="sidebar">
+
+					<ul>
+											<li>
+							<h2 style="color:PaleVioletRed" ><b><font size="5">UVOD U STATISTIKU</b></font></h2>
+							<ul>
+	
+							<li><a href="uvod.html"><font color=#000000 size="3,5"><i><u>Uvod</u></i></font></a></li>
+							<li><a href="zanimljivost.html"><font color=#000000 size="3"><i><u>Zanimljivost</u></i></font></a></li>
+							<li><a href="populacijaIobelezje.html"><font color=#000000 size="3"><i><u>Populacija i obeležje</u></i></font></a></li>
+							<li><a href="raspodelaIuzorkovanje.html"><font color=#000000 size="3"><i><u>Raspodela obeležja <br> Uzorkovanje</u></i></a></li>
+							<li><a href="grafickiPrikaz.html"><font color=#000000 size="3"><i><u>Grafički prikaz podataka</u></i></a></li>
+							<li><a href="histogram.html"><font color=#000000 size="3"><i><u>Histogram</u></i></a></li>
+							<li><a href="karakteristike.html"><font color=#000000 size="3"><i><u>Parametri centralne tendencije <br>Mere rasejanja</u></i></a></li>
+							<li><a href="autlajeri.html"><font color=#000000 size="3"> <i><u>Autlajeri</u></i></a></li>
+							<li><a href="zadatak.html"><font color=#000000 size="3"> <i><u>Zadaci</u></i></a></li>
+							<li><a href="geogebra.html"><font color=#000000 size="3"> <i><u>Statistika i GeoGebra</u></i></a></li>
+							<li><a href="literatura.html"><font color=#000000 size="3"> <i><u>Literatura</u></i></a></li>
+
+						</li>
+					</ul>
+
+				</div>
+				
+
+
+
+<div id="list">
+ 
+<center>
+<b><font face="times new roman" size="5"> Zadaci </font></b>
+</center>
+
+
+&nbsp; &nbsp; 
+<font size=3 face="times new roman">
+<p align=justify>
+<br>
+	
+	<b><u>Zadatak 1:</b></u><br>
+	<font color=#DB7093><b>Radi planiranja proizvodnje, fabrika obuće je na slučajan način odabrala grupu
+	od 20 ljudi i kod njih registrovala broj cipela: <br>39, 40, 44, 42, 43, 39, 41, 41, 44, 
+	45, 42, 43, 42, 42, 40, 44, 43, 42, 40, 43.<br>
+	a) predstaviti uzorak tabelarno
+	<br>
+	b) nacrtati histogram apsolutnih frekvencija.</b>
+	<br><br></font>
+	<u><b>Rešenje:</u></b><br>
+	a)Za predstavljanje uzorka tabelerano potrebno je da prebrojimo koliko ljudi nosi
+	isti broj cipela. Dakle, u levoj koloni ćemo upisati brojeve cipela, dok 
+   ćemo u desnoj upisati koliko ljudi nosi broj cipela koji je u istoj vrsti.	
+   <table>
+  <tr>
+    <th>VELIČINA CIPELA</th>
+    <th>BROJ LJUDI</th>
+  </tr>
+  <tr>
+    <td style="text-align:center">broj 39</td>
+    <td style="text-align:center">2</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">broj 40</td>
+    <td style="text-align:center">3</td>
+  </tr>
+  <tr>
+    <td style="text-align:center">broj 41</td>
+    <td style="text-align:center">2</td>
+  </tr>
+   <tr>
+    <td style="text-align:center">broj 42</td>
+    <td style="text-align:center">5</td>
+  </tr>
+   <tr>
+    <td style="text-align:center">broj 43</td>
+    <td style="text-align:center">4</td>
+  </tr><tr>
+    <td style="text-align:center">broj 44</td>
+    <td style="text-align:center">3</td>
+  </tr><tr>
+    <td style="text-align:center">broj 45</td>
+    <td style="text-align:center">1</td>
+  </tr>
+</table>
+	<br>
+	b) U ovom delu zadatka nam se traži histogram apsolutnih frekvencija. <br>
+	Ovakav histogram crtamo tako što će na x-osi biti veličine cipela, dok ćemo na y-osi
+	predstaviti broj ljudi koji nosi određenu veličinu.
+	<br>
+	<img src="zadatak1.png">
+	<br><br>
+	
+	<b><u>Zadatak 2:</b></u><br>
+	<font color=#DB7093><b>U fabrici satova vršena su merenja odstupanja prečnika osovine od 
+	standardne veličine na 300 časovnika (u mikronima):<br>
+	 <table>
+  <tr>
+    <th>ODSTUPANJA</th>
+    <td style="text-align:center"> 0-5 </td>
+	<td style="text-align:center"> 5-10 </td>
+	<td style="text-align:center"> 10-15 </td>
+	<td style="text-align:center"> 15-20 </td>
+	<td style="text-align:center"> 20-25 </td>
+  </tr>
+  <tr>
+    <th>BR.OSOVINA</th>
+    <td style="text-align:center"> 35 </td>
+	<td style="text-align:center"> 65 </td>
+	<td style="text-align:center"> 120 </td>
+	<td style="text-align:center"> 70 </td>
+	<td style="text-align:center"> 10 </td>
+  </tr>
+  </table>
+	
+	
+	Nacrtati trakasti dijagram i izračunati uzoračku sredinu
+	(za vrednost svakog intervala uzima se središte tog intervala).</b></font><br>
+	<br><u><b>Rešenje:</u></b><br>
+	Trakasti dijagram nije teško nacrtati jer već imamo tabelarni prikaz podataka, 
+	pa ćemo samo podatke preneti na trakasti dijagram.<br>
+	<img src="zadatak2.png"><br>
+	Znamo opštu formulu realizovane vrednosti uzoračke sredine:<br>
+	$\overline{x}=\frac{(x_1+x_2+…+x_n)}{n}$<br>
+	Ako saberemo broj svih osovina dobijamo da je
+	$n=35+65+120+70+10=300$ <br>
+	Za vrednosti intervala ćemo uzimati središte intervala koje računamo
+	kao zbir krajnjih vrednosti intervala podeljen sa dva.<br>
+	Kako u svakom intervalu ima odredjen broj osovina, $x_i$, za svako $i$ iz $\overline{(1,5)}$.<br>
+	računaćemo tako što ćemo vrednost središta svakog intervala pomnožiti sa brojem osovina. <br>
+	<br>
+	$\overline{x}=\frac{1}{300}(35\frac{0+5}{2}+65\frac{5+10}{2}+
+	120\frac{10+15}{2}+70\frac{15+20}{2}+10\frac{20+25}{2})=$<br>
+	$\frac{1}{300}(87.5+487.5+1500+1225+225)=\frac{1}{300}3525=11.75$
+	<br><br>
+	<b><u>Zadatak 3:</b></u><br>
+	<font color=#DB7093><b>Populaciju čine stabla jedne šume, njih 12580.
+	Radi održavanja i korišćenja šume stabla se klasifikuju po starosti:<br>
+	 <table>
+  <tr>
+    <th>STAROST</th>
+    <td style="text-align:center"> 0-5 god. </td>
+	<td style="text-align:center"> 5-10 god. </td>
+	<td style="text-align:center"> 10-15 god. </td>
+	<td style="text-align:center"> 15-20 god. </td>
+	<td style="text-align:center"> 20-25 god. </td>
+  </tr>
+  <tr>
+    <th>BR.STABALA</th>
+    <td style="text-align:center"> 1220 </td>
+	<td style="text-align:center"> 910 </td>
+	<td style="text-align:center"> 5340 </td>
+	<td style="text-align:center"> 3750 </td>
+	<td style="text-align:center"> 1360 </td>
+  </tr>
+  </table>
+  Nacrtati kružni dijagram i izračunati uzoračku sredinu(za vrednost svakog intervala uzima se središte tog intervala).
+	</b>
+	</font><br><br>
+	<u><b>Rešenje:</u></b><br>
+	Kao i za trakasti dijagram, imamo tabelarno prikazane podatke i nije teško preneti to na
+    kružni dijagram. <br>
+	<img src="zadatak3.png"><br><br>
+	Opšta formula uzoračke sredine je data i u zadatku 2, pa ćemo je ovde direktno primeniti.<br>
+	$n=12580$ <br><br>
+	$\overline{x}=\frac{1}{12580}(1220\frac{0+5}{2}+910\frac{5+10}{2}+
+	5340\frac{10+15}{2}+3750\frac{15+20}{2}+1360\frac{20+25}{2})=$<br>
+	$\frac{1}{12580}(3050+6825+66750+65625+30600)=\frac{1}{12580}172850=13.74$
+	<br><br><b><u>Zadatak 4:</b></u><br>
+	<font color=#DB7093><b>Radi ocenjivanja prosečne visine  svih učenica jedne gimnazije
+	izmerena je visina grupi od 20 učenica i dobijeni su sledeći rezultati:<br>
+	 <table>
+  <tr>
+    <th>VISINA</th>
+    <td style="text-align:center"> 153cm </td>
+	<td style="text-align:center"> 154cm </td>
+	<td style="text-align:center"> 157cm </td>
+	<td style="text-align:center"> 169cm </td>
+	<td style="text-align:center"> 170cm </td>
+	<td style="text-align:center"> 171cm </td>
+	<td style="text-align:center"> 173cm </td>
+  </tr>
+  <tr>
+    <th>BR.UČENICA</th>
+    <td style="text-align:center"> 2 </td>
+	<td style="text-align:center"> 1 </td>
+	<td style="text-align:center"> 5 </td>
+	<td style="text-align:center"> 9 </td>
+	<td style="text-align:center"> 1 </td>
+	<td style="text-align:center"> 1 </td>
+	<td style="text-align:center"> 1 </td>
+  </tr>
+  </table>
+ Izračunati prosečnu visinu učenica, medijanu i ocenu interkvartilnog rastojanja.
+	</b>
+	</font><br><br>
+	<u><b>Rešenje:</u></b><br>
+	Prosečnu visinu učenica možemo izračunati kao realizovanu vrednost uzoračke sredine.
+	<br>
+	U našem slučaju $n=20$. <br><br>
+	$\overline{x}=\frac{1}{20}(2*153+154+5*157+9*169+170+171+173)=$<br>
+	$=\frac{1}{20}3279=163.95$<br><br>
+	Da bismo računali medijanu i ocenu za interkvartilno rastojanje potreban nam je varijacioni niz.<br>
+	Imamo tabelarni prikaz sortiranih podataka što nam olakšava nalaženje varijacionog niza.
+	<br><br>
+	$(X_{(1)}, X_{(2)},X_{(3)}, X_{(4)}, X_{(5)}, X_{(6)}, X_{(7)}, X_{(8)}, X_{(9)}, X_{(10)},$<br>$ X_{(11)}, X_{(12)}, X_{(13)}, X_{(14)}, X_{(15)}, X_{(16)}, X_{(17)}, X_{(18)}, X_{(19)}, X_{(20)})=$<br>
+	$(153, 153, 154, 157, 157, 157, 157, 157, 169, 169, 169, 169, 169, 169, 169, 169, 169, 170, 170, 173)$<br>
+	<br>Kako je uzorak paran : $n=2k$. U našem slučaju $n=20$ pa odavde očigledno možemo zaključiti da je $k=10$.<br>
+	Po opštoj formuli za medijanu: $m_{(e)}=\frac{X_{(k)}+X_{(k+1)}}{2}$ sledi naša formula: <br>
+	$ m_{(e)}=\frac{X_{(10)}+X_{(11)}}{2}=\frac{169+169}{2}=169$ <br>
+	<br>$q_1$ ćemo naći kao medijanu prve polovine niza dok bi $q_3$ bila medijana druge polovine početnog <br>
+	<br>$q_1=\frac{X_{(5)}+X_{(6)}}{2}=\frac{157+157}{2}=157$ <br>
+	$q_3=\frac{X_{(15)}+X_{(16)}}{2}=\frac{169+169}{2}=169$ <br>
+	$IQR= q_3-q_1=169-157=12$<br>
+	<br>
+	<b><u>Zadatak 5:</b></u><br>
+	<font color=#DB7093><b>U sledećoj tabeli dati su podaci o visinama 12 košarkaša jedne ekipe: <br>
+	<table>
+  <tr>
+    <th>VISINA (u cm) </th>
+    <th>BROJ KOŠARKAŠA</th>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 180-190 </td>
+    <td style="text-align:center"> 3 </td>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 190-200 </td>
+    <td style="text-align:center"> 3 </td>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 200-210 </td>
+    <td style="text-align:center"> 2 </td>
+  </tr>
+   <tr>
+    <td style="text-align:center"> 210-220 </td>
+    <td style="text-align:center"> 4 </td>
+  </tr>
+</table>
+	
+	Izračunati uzoračku sredinu, uzoračku disperziju i popravljenu uzoračku disperziju 
+	(za vrednost svakog intervala uzima se središte tog intervala)</b>.<br><br></font>
+	<u><b>Rešenje:</u></b><br>
+	Uzoračku sredinu računamo kao i u prethodnim zadacima.<br>
+	U ovom slučaju je $n=3+3+2+4=12$ <br><br>
+	$\overline{x}=\frac{1}{12}(3\frac{180+190}{2}+3\frac{190+200}{2}+
+	2\frac{200+210}{2}+4\frac{210+220}{2})=$<br>
+	$\frac{1}{12}(555+585+410+860)=\frac{1}{12}2410=200.83$<br>
+	<br>
+	Opšta formula uzoračke disperzije: <br>
+	$\overline{S}^2= \frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X})^2$
+	<br>
+	<br>U ovom zadatku: <br>
+	$\overline{S}^2= \frac{1}{12}\sum_{i=1}^{12}(X_i-\overline{X})^2=$<br>
+	$=\frac{1}{12}(3*{(185-200.83)}^2+3*{(195-200.83)}^2+2*{(205-200.83)}^2+4*{(215-200.83)}^2)=$<br>
+	$=\frac{1}{12}(751.77+101.97+34.78+803.15)=\frac{1}{12}1691.67=140.97$
+	<br><br>
+	Opšta formula popravljene uzoračke disperzije: <br>
+	$\widetilde{S}^2= \frac{1}{n-1}\sum_{i=1}^{n}(X_i-\overline{X})^2$<br><br>
+	U našem slučaju:<br>
+	$\widetilde{S}^2=\frac{1}{11}\sum_{i=1}^{12}(X_i-\overline{X})^2=\frac{1}{11}1691.67=153.79$<br>
+		<br>
+	<b><u>Zadatak 6:</b></u><br>
+	<font color=#DB7093><b>Izmerene su dužine u centrimetrima 100 beba rođenih u jednoj bolnici<br>
+u određenom periodu:
+	<br>
+	<table>
+  <tr>
+    <th>DUŽINA (u cm) </th>
+    <th>BROJ BEBA</th>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 40-43 </td>
+    <td style="text-align:center"> 1 </td>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 43-46 </td>
+    <td style="text-align:center"> 4 </td>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 46-49 </td>
+    <td style="text-align:center"> 20 </td>
+  </tr>
+    <tr>
+    <td style="text-align:center"> 49-52 </td>
+    <td style="text-align:center"> 43 </td>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 52-55 </td>
+    <td style="text-align:center"> 30 </td>
+  </tr>
+  <tr>
+    <td style="text-align:center"> 55-58 </td>
+    <td style="text-align:center"> 2 </td>
+  </tr>
+</table>
+
+	Izračunati uzoračku sredinu, uzoračku disperziju i popravljenu uzoračku disperziju
+	(za vrednost svakog intervala uzima se središte tog intervala). </b><br><br></font>
+	<u><b>Rešenje:</u></b><br>
+	Uzoračku sredinu računamo kao i u prethodnim zadacima.<br>
+	U ovom slučaju je $n=100$ <br><br>
+	$\overline{x}=\frac{1}{100}(\frac{40+43}{2}+4\frac{43+46}{2}+
+	20\frac{46+49}{2}+43\frac{49+52}{2}+30\frac{52+55}{2}+2\frac{55+58}{2})=$<br>
+	$\frac{1}{100}(41.5+178+950+2171.5+1605+113)=\frac{1}{100}5059=50.59$<br>
+	<br>
+	Opštu formulu uzoračke disperzije smo videli u prethodnom zadatku,dakle ovde ćemo je samo primeniti: <br>
+	$\overline{S}^2= \frac{1}{100}\sum_{i=1}^{100}(X_i-\overline{X})^2=$<br>
+	$=\frac{1}{100}({(41.5-50.59)}^2+4*{(44.5-50.59)}^2+20*{(47.5-50.59)}^2+$<br>
+	$+43*{(50.5-50.59)}^2+30*{(53.5-50.59)}^2+2*{(56.5-50.59)}^2)=$<br>
+	$=\frac{1}{100}(82.63+148.35+190.96+0.35+254.04+69.86)=\frac{1}{100}746.55=7.46$
+	<br><br>
+	Opštu formulu popravljene uzoračke disperzije primenimo i dobijamo sledeće: <br>
+	$\widetilde{S}^2=\frac{1}{99}\sum_{i=1}^{100}(X_i-\overline{X})^2=\frac{1}{99}746.55=7.54$<br>
+	
+
+	</p>
+
+</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+html, body
+{
+	height: 100%;
+}
+
+body
+{
+	margin: 0px;
+	padding: 0px;
+	font-family: ' Open Sans', sans-serif;
+	font-size: 13px;
+	}
+
+
+
+p, ul
+{
+	margin-top: 0px;
+}
+
+ul
+{
+	margin: 0px;
+	padding: 0px;
+	list-style:  none
+}
+
+p
+{
+	line-height: 150%;
+}
+
+.container
+{
+	width: 1100px;
+	margin: 0px auto;
+}
+
+#sidebar 
+{
+	font: normal  14px Times New Roman;
+	float: left;
+	width: 285px;
+	margin: 0px;
+	padding: 15px 0px 0px 20px;
+	
+	
+}
+
+#sidebar li li 
+{
+	line-height: 30px;
+	//border-bottom: 1px dashed; 
+	margin: 0px 20px 0px 20px;
+	border-left: none;
+	text-align: left;
+}
+
+#list 
+{
+	float: right;
+	width: 670px;
+	padding: 30px 20px 0px 0px;
+	font-family: 'Times New Roman';
+	text-align: justify;
+	font-size: 1.2em;
+	margin-right: 20px;
+	
+}
+
